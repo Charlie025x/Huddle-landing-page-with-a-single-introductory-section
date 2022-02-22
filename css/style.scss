@@ -52,6 +52,7 @@ main {
     margin-bottom: 4rem;
     border-radius: 2rem;
     color: var(--clr-violet);
+    font-size: inherit;
     filter: drop-shadow(0 5px 3px rgba(43, 15, 119, 0.459));
     cursor: pointer;
     &:hover {
@@ -87,5 +88,42 @@ main {
   font-size: 11px; text-align: center;
   a {
   color: hsl(308, 41%, 75%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+    h1 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.3rem ;
+    }
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 10rem);
+    .logo {
+      width: 13rem;
+    }
+    .mockup {
+      width: 100%;
+    }
+    .logo, .share-container {
+      grid-column: span 2;
+    }
+    .share-container {
+      text-align: end;
+    }
+    .call-to-action {
+      text-align: start;
+      margin-block: auto;
+      margin-left: 5rem;
+    }
+    button {
+      width: 13rem;
+    }
   }
 }

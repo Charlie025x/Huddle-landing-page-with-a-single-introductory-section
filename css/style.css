@@ -51,6 +51,7 @@ main button {
   margin-bottom: 4rem;
   border-radius: 2rem;
   color: var(--clr-violet);
+  font-size: inherit;
   filter: drop-shadow(0 5px 3px rgba(43, 15, 119, 0.459));
   cursor: pointer;
 }
@@ -84,4 +85,42 @@ main .share-container .fa-brands:hover {
 }
 .attribution a {
   color: #d9a5d2;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+  }
+  body h1 {
+    font-size: 2.8rem;
+  }
+  body p {
+    font-size: 1.3rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    width: calc(100% - 10rem);
+  }
+  main .logo {
+    width: 13rem;
+  }
+  main .mockup {
+    width: 100%;
+  }
+  main .logo, main .share-container {
+    grid-column: span 2;
+  }
+  main .share-container {
+    text-align: end;
+  }
+  main .call-to-action {
+    text-align: start;
+    margin-block: auto;
+    margin-left: 5rem;
+  }
+  main button {
+    width: 13rem;
+  }
 }/*# sourceMappingURL=style.css.map */
