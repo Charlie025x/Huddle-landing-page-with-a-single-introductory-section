@@ -93,18 +93,19 @@ main .share-container .fa-brands:hover {
     background-size: contain;
   }
   body h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   body p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     width: calc(100% - 10rem);
   }
   main .logo {
     width: 13rem;
+    margin-bottom: 5rem;
   }
   main .mockup {
     width: 100%;
@@ -118,7 +119,7 @@ main .share-container .fa-brands:hover {
   main .call-to-action {
     text-align: start;
     margin-block: auto;
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
   main button {
     width: 13rem;
